@@ -59,11 +59,9 @@ class CallableModel:
         self.model.fit(X, y, *args, **kwargs)
         return self
 
-    
     def preproc(self, x):
         return np.array([x])
 
-    
     def postproc(self, x, model_output):
         return model_output[0]
 
